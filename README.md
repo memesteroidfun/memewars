@@ -1,10 +1,10 @@
-# MemeWarsPythImmutable
+# memewars
 
 A Solidity smart contract for meme-based gaming on the blockchain.
 
 ## Overview
 
-MemeWarsPythImmutable is a smart contract that implements a meme-based battle system where players can engage in strategic gameplay using meme tokens.
+memewars is a smart contract that implements a meme-based battle system where players can engage in strategic gameplay using meme tokens.
 
 ## Getting Started
 
@@ -19,8 +19,8 @@ MemeWarsPythImmutable is a smart contract that implements a meme-based battle sy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/memesteroidfun/MemeWarsPythImmutable.git
-   cd MemeWarsPythImmutable
+   git clone https://github.com/memesteroidfun/memewars.git
+   cd memewars
    ```
 
 2. Install dependencies:
@@ -48,6 +48,24 @@ MemeWarsPythImmutable is a smart contract that implements a meme-based battle sy
 - Battle system implementation
 - Reward distribution
 - Player statistics tracking
+
+## MUSD Token
+
+The project includes a MUSD (Meme USD) token contract that serves as a faucet for testing and gameplay.
+
+### MUSD Features
+
+- **Token Name**: Meme USD (MUSD)
+- **Faucet System**: Users can claim 1000 MUSD tokens every 4 hours
+- **Cooldown Period**: 4-hour waiting period between claims
+- **ERC20 Standard**: Fully compatible with ERC20 token standard
+
+### MUSD Functions
+
+- `claim()`: Claim 1000 MUSD tokens (4-hour cooldown)
+- `timeUntilNextClaim(address)`: Check remaining cooldown time
+- `canClaim(address)`: Check if user can claim tokens
+- `lastClaim(address)`: View last claim timestamp for a user
 
 ## Contributing
 
